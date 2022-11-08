@@ -6,11 +6,20 @@ html {
     /*1.6rem = 16px*/
 }  
 :root {
-	Variables added here
+	--Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
 }
 body {
-    font-size: 1.6rem;
-    font-family: add a font;
+    font-size: 1.4rem;
+    font-family: 'Montserrat'; 
+    background-color: var(--Cream); 
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 * {
     box-sizing: border-box;
@@ -20,6 +29,67 @@ body {
     margin: 0;  
 }
 img {
-    width: 100%;
-    max-width: 100%;
+    width: 100%; 
+    height: 100%; 
+}  
+/* Styling */ 
+.container {
+    background-color: white; 
+    display: flex; 
+    text-align: start;
+    border-radius: 10px; 
+} 
+.container img { 
+    border-radius: 10px 0px 0px 10px;
+} 
+.m-1 {
+    margin-bottom: 2rem;
 }
+
+h1 {
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+}
+h2 { 
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--Very-dark-blue); 
+    font-family: 'Fraunces', sans-serif; 
+} 
+p { 
+    color: var(--Dark-grayish-blue);
+    line-height: 1.8;
+}
+.price {
+    color: var(--Dark-cyan); 
+    font-family: 'Fraunces', sans-serif;
+    font-size: 3rem;
+} 
+.discount {
+    text-decoration: line-through; 
+    color: var(--Dark-grayish-blue);
+} 
+button { 
+    cursor: pointer;
+    font-family: inherit;
+    color: white;
+    background-color: var(--Dark-cyan);
+    border: none;
+    outline: none;
+    padding: 1rem 6rem;
+    border-radius: 10px;
+} 
+button:hover {
+    background-color: var(--Very-dark-blue);
+}
+button img {
+    width: 1.5rem;
+    margin-right: 1rem;
+} 
+/* layout */ 
+.sidebox {
+    padding: 2rem;
+}
+
