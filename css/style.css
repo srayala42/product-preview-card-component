@@ -80,7 +80,10 @@ p {
     text-decoration: line-through; 
     color: var(--Dark-grayish-blue);
 } 
-button { 
+button {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     font-family: inherit;
     color: white;
@@ -88,7 +91,7 @@ button {
     border: none;
     outline: none;
     padding: 1rem 6rem;
-    border-radius: 10px;
+    border-radius: 10px; 
 } 
 button:hover {
     background-color: var(--Very-dark-blue);
